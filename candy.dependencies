@@ -1,14 +1,17 @@
 [
   {
     "repository": "kernel_zuk_msm8996",
-    "target_path": "kernel/zuk/msm8996"
+    "target_path": "kernel/zuk/msm8996",
+     "branch": "c11"
   },
   {
     "repository": "SecretIngredients/vendor_zuk",
-    "target_path": "vendor/zuk"
+    "target_path": "vendor/zuk",
+    "branch": "c11"
   },
   {
    "repository": "device_zuk_msm8996-common",
-    "target_path": "device/zuk/msm8996-common"
+    "target_path": "device/zuk/msm8996-common",
+    "branch": "c11"
   }
 ]
