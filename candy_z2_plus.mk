@@ -22,12 +22,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/zuk/z2_plus/device.mk)
 
 # Boot animation resolution
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
 
-# Inherit some common AOSP-OMS stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+# Inherit some common candy-OMS stuff.
+$(call inherit-product, vendor/candy/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosp_z2_plus
+PRODUCT_NAME := candy_z2_plus
 PRODUCT_DEVICE := z2_plus
 PRODUCT_MANUFACTURER := ZUK
 PRODUCT_BRAND := ZUK
@@ -44,8 +45,10 @@ TARGET_VENDOR := ZUK
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="z2_plus-user 7.0 NRD90M 3.1.117_171110 release-keys"
 
-#GApps
-WITH_GAPPS := true
-
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "ZUK/z2_plus/z2_plus:7.0/NRD90M/3.1.117_171110:user/release-keys"
+
+
+# OFFICIAL
+CANDY_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true

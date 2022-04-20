@@ -14,8 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_z2_plus.mk
+    $(LOCAL_DIR)/candy_z2_plus.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_z2_plus-userdebug \
-    aosp_z2_plus-eng
+    candy_z2_plus-userdebug \
+    candy_z2_plus-eng
